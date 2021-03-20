@@ -429,8 +429,48 @@ color: var(--blue-active);
   font-style: normal;
   font-weight: 400;
   font-size: 12px;
-  line-height: 1,16px;
-  color:rgba(117, 117, 117, 0.5); ;
+  line-height: 1.16px;
+  color:rgba(117, 117, 117, 0.5);
+}
+
+.checkbox-text {
+  font-family: Roboto;
+  font-style: normal;
+  font-weight: 400;
+  font-size: 14px;
+  line-height: 1.71px;
+  color: var(--black-light);
+
+  margin-left: 8,38px;
+}
+
+.checkbox-link {
+  color: var(--blue-active);
+}
+
+.wrapper-checkbox {
+  margin-bottom: 30px;
+}
+
+.button-submit {
+  width: 200px;
+  height: 50px;
+
+  border-radius: 4px;
+  border: 1px solid var(--blue-active);
+  color: var(--white);
+  background-color: var(--blue-active);
+  box-shadow:0px 4px 4px rgba(0, 0, 0, 15%);
+
+  font-weight: 700;
+  font-size: 16px;
+  line-height: 1.87;
+  font-family: "Roboto", sans-serif;
+}
+
+.modal-button-submit {
+ display: flex;
+ justify-content: center;
 }
 
 textarea {
