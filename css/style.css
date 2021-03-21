@@ -166,7 +166,6 @@ a {
   line-height: 1.14;
 }
   
-
 .page-links .links.current {
   color: var(--blue-active);
 }
@@ -343,8 +342,10 @@ a {
   right: 8px;
 }
 
-.modal-button:hover {
-color: var(--blue-active);
+.modal-button:hover,
+.modal-button:focus {
+
+  color: var(--blue-active);
 }
 
 .close-black {
@@ -360,7 +361,7 @@ color: var(--blue-active);
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1,15px;
+  line-height: 1,17px;
   color: var(--black-text);
   text-align: center;
   margin-bottom: 12px;
@@ -373,6 +374,7 @@ color: var(--blue-active);
   display: flex;
   flex-direction: column;
   margin-bottom: 10px;
+  position: relative;
 }
 
 .form-filed-name {
@@ -392,10 +394,17 @@ color: var(--blue-active);
   border-radius: 4px;
 }
 
+.data-form:hover {
+  color: var(--blue-active);
+}
+
+.svg-data-form {
+  position: absolute;
+  top: 50%;
+}
+
  .form-field > .svg-data-form {
- 
-  top: 14px;
-  left: 15px;
+  left: 12px;
   fill: var(--black-text);
 }
 
@@ -444,12 +453,22 @@ color: var(--blue-active);
   margin-left: 8,38px;
 }
 
+.blue-tick {
+  width: 16px;
+  height: 15px;
+  color: var(--white);
+  background-color: var(--blue-active);
+  border-radius: 2px;
+  position: absolute;
+}
+
 .checkbox-link {
   color: var(--blue-active);
 }
 
 .wrapper-checkbox {
   margin-bottom: 30px;
+  position: relative;
 }
 
 .button-submit {
