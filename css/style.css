@@ -474,7 +474,7 @@ a {
 
 
 
-/*  .checkbox {
+ .checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -486,7 +486,7 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
-  */
+  
 
 .icon {
   display: inline-block;
