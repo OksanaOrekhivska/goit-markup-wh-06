@@ -470,7 +470,7 @@ a {
 
 .checkbox-link {
   color: var(--blue-active);
-  border-bottom: 1px solid var(--blue-active);
+  text-decoration: underline;
 } 
 
 
@@ -506,9 +506,11 @@ a {
   border-color: transparent;
   fill: var(--white);
   background-color: var(--blue-active);
-  background-image: url(../img/icon-check.svg);
+  background-image: url(./img/icon.svg/#icon-check);
   background-size: contain;
   background-origin: border-box;
+
+  transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
 /* Кнопка модалки */
