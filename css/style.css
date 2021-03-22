@@ -504,8 +504,9 @@ a {
 
 .checkbox:checked + .icon {
   border-color: transparent;
+  fill: var(--white);
   background-color: var(--blue-active);
-  background-image: ../img/icon-check.svg;
+  background-image: url(../img/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 }
