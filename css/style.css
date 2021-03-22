@@ -361,7 +361,7 @@ a {
   font-style: normal;
   font-weight: 700;
   font-size: 20px;
-  line-height: 1,17px;
+  line-height: 1,15px;
   color: var(--black-text);
   text-align: center;
   margin-bottom: 12px;
@@ -454,25 +454,33 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
-.checkbox-text {
+.label {
   font-family: Roboto;
   font-style: normal;
   font-weight: 400;
   font-size: 14px;
   line-height: 1.71px;
   color: var(--black-light);
-
-  margin-left: 8,38px;
+  display: block;
+  align-items: center;
+  margin-bottom: 30px;
 }
 
 .blue-tick {
+  display: block;
   width: 16px;
   height: 15px;
-  color: var(--white);
+ 
   background-color: var(--blue-active);
+  border: 2px solid var(--blue-active);
   border-radius: 2px;
-  position: absolute;
-  left: 39px;
+}
+
+.checkbox:checked + .icon {
+  border-color: transparent;
+  background-color: var(--blue-active);
+  background-size: contain;
+  background-origin: border-box;
 }
 
 .checkbox-link {
@@ -480,11 +488,20 @@ a {
   border-bottom: 1px solid var(--blue-active);
 }
 
-.lower-form {
-  margin-bottom: 30px;
-  position: relative;
+.checkbox {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  border: 0;
+  padding: 0;
+  white-space: nowrap;
+  clip-path: inset(100%);
+  clip: rect(0 0 0 0);
+  overflow: hidden;
 }
 
+/* Кнопка модалки */
 .button-submit {
   width: 200px;
   height: 50px;
