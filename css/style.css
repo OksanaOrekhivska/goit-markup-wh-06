@@ -462,9 +462,10 @@ a {
   font-size: 14px;
   line-height: 1.71px;
   color: var(--black-light);
-  display: block;
+  display: flex;
   align-items: center;
   margin-bottom: 30px;
+  
 }
 
 .checkbox-link {
@@ -492,9 +493,13 @@ a {
   display: inline-block;
   width: 16px;
   height: 15px;
+  fill: var(--white);
 
-  border-radius: 2px solid var(--black-text);
+  border: 2px solid var(--black-text);
   border-radius: 4px;
+
+  margin-left: 14px;
+  margin-right: 9px;
 }
 
 .checkbox:checked + .icon {
