@@ -506,7 +506,7 @@ a {
   border-color: transparent;
   fill: var(--white);
   background-color: var(--blue-active);
-  background-image: url(./img/icon.svg#icon-check);
+  background-image: url(../img/icon-check.svg);
   background-size: contain;
   background-origin: border-box;
 
