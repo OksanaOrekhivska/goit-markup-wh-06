@@ -454,6 +454,7 @@ a {
   transition: transform 250ms cubic-bezier(0.4, 0, 0.2, 1); 
 }
 
+
 .label {
   font-family: Roboto;
   font-style: normal;
@@ -466,29 +467,14 @@ a {
   margin-bottom: 30px;
 }
 
-.blue-tick {
-  display: block;
-  width: 16px;
-  height: 15px;
- 
-  background-color: var(--blue-active);
-  border: 2px solid var(--blue-active);
-  border-radius: 2px;
-}
-
-.checkbox:checked + .icon {
-  border-color: transparent;
-  background-color: var(--blue-active);
-  background-size: contain;
-  background-origin: border-box;
-}
-
 .checkbox-link {
   color: var(--blue-active);
   border-bottom: 1px solid var(--blue-active);
-}
+} 
 
-.checkbox {
+
+
+/*  .checkbox {
   position: absolute;
   width: 1px;
   height: 1px;
@@ -500,6 +486,18 @@ a {
   clip: rect(0 0 0 0);
   overflow: hidden;
 }
+  */
+
+.icon {
+  display: inline-block;
+  width: 16px;
+  height: 15px;
+
+  border-radius: 2px solid var(--black-text);
+  border-radius: 4px;
+}
+
+
 
 /* Кнопка модалки */
 .button-submit {
