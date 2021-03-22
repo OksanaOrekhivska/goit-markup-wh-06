@@ -497,7 +497,13 @@ a {
   border-radius: 4px;
 }
 
-
+.checkbox:checked + .icon {
+  border-color: transparent;
+  background-color: var(--blue-active);
+  background-image: ../img/icon-check.svg;
+  background-size: contain;
+  background-origin: border-box;
+}
 
 /* Кнопка модалки */
 .button-submit {
